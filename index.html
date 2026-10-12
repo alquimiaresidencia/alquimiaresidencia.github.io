@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alquimia Residencia Senior · Tandil</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Residencia senior en el centro de Tandil. Enfermería las 24 horas, habitaciones con baño privado, consultorios y cocina propia. Inauguración diciembre 2026. Preventa abierta.">
+<meta property="og:title" content="Alquimia Residencia Senior · Tandil">
+<meta property="og:description" content="Inauguramos en diciembre. Preventa abierta. Fuerte Independencia 57, Tandil.">
+<meta property="og:image" content="img/compartir.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/simbolo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: columna editorial de 1120px; secciones que alternan texto y foto, galería en mosaico, formulario a dos columnas */
+:root{
+  --bg:#FBF8F2; --surface:#FFFFFF; --ink:#2B241D; --muted:#6F6457; --line:#E7DDCC;
+  --gold:#A3823F; --gold-soft:#F1E7D3; --sage:#6F7F5E; --deep:#1D1813; --on-deep:#F3ECE0;
+  --display:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --body:'Jost', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#17130F; --surface:#211C16; --ink:#F1E9DC; --muted:#B8AC98; --line:#3A3127;
+  --gold:#D2B173; --gold-soft:#3A2F20; --sage:#A3B38F; --deep:#0F0C09; --on-deep:#F3ECE0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17130F; --surface:#211C16; --ink:#F1E9DC; --muted:#B8AC98; --line:#3A3127;
+  --gold:#D2B173; --gold-soft:#3A2F20; --sage:#A3B38F; --deep:#0F0C09; --on-deep:#F3ECE0; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:300;font-size:17px;line-height:1.65}
+img,video{max-width:100%;display:block}
+a{color:var(--gold)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.1;margin:0;text-wrap:balance}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 26px;border-radius:40px;border:1px solid var(--gold);background:var(--gold);color:#fff;font:400 15.5px/1 var(--body);letter-spacing:.03em;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(.93)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.line:hover{border-color:var(--gold)}
+
+/* Cabecera */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand img{width:38px;height:38px}
+.brand span{font-family:var(--display);font-size:24px;letter-spacing:.06em}
+.nav{display:flex;gap:22px;margin-left:auto}
+.nav a{color:var(--muted);text-decoration:none;font-size:15px}
+.nav a:hover{color:var(--ink)}
+.top .btn{min-height:42px;padding:10px 20px;font-size:14.5px}
+@media (max-width:860px){.nav{display:none}.top .btn{margin-left:auto}}
+
+/* Portada */
+.hero{padding-block:56px 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-text{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero-logo{width:min(300px,70%)}
+.stamp{align-self:flex-start;display:inline-flex;gap:12px;align-items:center;border:1px solid var(--gold);color:var(--gold);border-radius:40px;padding:8px 18px;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.stamp i{width:6px;height:6px;border-radius:50%;background:var(--sage);display:inline-block}
+.hero h1{font-size:clamp(42px,6vw,70px)}
+.hero h1 em{color:var(--gold)}
+.hero p{margin:0;color:var(--muted);max-width:520px;font-size:18px}
+.hero .row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative;border-radius:200px 200px 14px 14px;overflow:hidden;aspect-ratio:3/4;max-width:100%;background:var(--gold-soft)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 6%}
+.hero-photo figcaption{position:absolute;left:16px;bottom:16px;background:rgba(20,16,12,.72);color:#F3ECE0;font-size:13px;padding:6px 14px;border-radius:30px}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:36px}.hero-photo{aspect-ratio:3/4}}
+
+/* Datos clave */
+.facts{border-block:1px solid var(--line);background:var(--surface)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.fact{padding:26px 18px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.fact:first-child{border-left:0}
+.fact b{font-family:var(--display);font-weight:500;font-size:30px;color:var(--ink);line-height:1.1}
+.fact span{color:var(--muted);font-size:14.5px}
+@media (max-width:760px){.facts .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.fact:nth-child(3){border-left:0}.fact:nth-child(n+3){border-top:1px solid var(--line)}}
+
+section{padding-block:88px}
+.head{display:flex;flex-direction:column;gap:12px;max-width:680px;margin-bottom:40px}
+.head h2{font-size:clamp(34px,4.6vw,50px)}
+.head h2 em{color:var(--gold)}
+.head p{margin:0;color:var(--muted)}
+
+/* Video */
+.video{background:var(--deep);color:var(--on-deep)}
+.video .head h2{color:#fff}
+.video .head p{color:#CFC3AF}
+.player{position:relative;border-radius:14px;overflow:hidden;background:#000;aspect-ratio:16/9;max-width:100%}
+.player video{width:100%;height:100%;object-fit:cover}
+
+/* La residencia */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.split>*{min-width:0}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.service{padding:22px 18px 22px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:flex-start}
+.service:nth-child(odd){padding-right:22px}
+.service svg{flex:none;color:var(--sage);margin-top:4px}
+.service h3{font-size:23px;margin-bottom:4px}
+.service p{margin:0;color:var(--muted);font-size:15.5px}
+.photo-stack{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.photo-stack img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.photo-stack img:first-child{grid-column:span 2;aspect-ratio:16/10}
+@media (max-width:860px){.split{grid-template-columns:1fr}.services{grid-template-columns:1fr}.service:nth-child(odd){padding-right:0}}
+
+/* Habitaciones */
+.rooms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.room{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.room img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.room .b{padding:24px 26px 28px;display:flex;flex-direction:column;gap:10px}
+.room h3{font-size:32px}
+.room p{margin:0;color:var(--muted)}
+.room ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.room li{font-size:14px;border:1px solid var(--line);border-radius:30px;padding:4px 12px;color:var(--ink)}
+@media (max-width:760px){.rooms{grid-template-columns:1fr}}
+
+/* Galería */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:190px;gap:12px}
+.gallery button{padding:0;border:0;border-radius:10px;overflow:hidden;cursor:zoom-in;background:var(--gold-soft)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gallery button:hover img{transform:scale(1.04)}
+.g-wide{grid-column:span 2}.g-tall{grid-row:span 2}
+@media (max-width:760px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px}}
+@media (prefers-reduced-motion:reduce){.gallery img{transition:none}}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1100px,94vw)}
+dialog.lb::backdrop{background:rgba(10,8,6,.88)}
+dialog.lb img{max-height:84vh;width:auto;border-radius:8px}
+dialog.lb p{color:#EFE6D8;text-align:center;margin:10px 0 0;font-size:15px}
+dialog.lb button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:16px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;font-size:22px;cursor:pointer}
+
+/* Ubicación */
+.place{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:stretch}
+.place>*{min-width:0}
+.place dl{margin:0;display:grid;gap:18px}
+.place dt{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.place dd{margin:2px 0 0;font-size:18px}
+.map{border-radius:14px;overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--gold-soft)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+@media (max-width:860px){.place{grid-template-columns:1fr}}
+
+/* Preventa */
+.presale{background:var(--gold-soft)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--gold);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.steps li::before{content:"Paso " counter(s);font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.steps b{font-family:var(--display);font-size:25px;font-weight:500}
+.steps span{color:var(--muted);font-size:15.5px}
+@media (max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* Formulario */
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.contact>*{min-width:0}
+.contact aside{display:flex;flex-direction:column;gap:22px}
+.direct{display:flex;flex-direction:column;gap:6px;padding:20px 22px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.direct span{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.direct a{font-size:22px;color:var(--ink);text-decoration:none;font-family:var(--display);font-weight:600}
+form{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
+.f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f.full{grid-column:1/-1}
+label,.legend{font-size:14px;font-weight:400;color:var(--ink)}
+label small{color:var(--muted);font-weight:300}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+textarea{min-height:110px;resize:vertical}
+fieldset{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:30px;padding:8px 14px;cursor:pointer;font-weight:300;background:var(--bg)}
+.chips input{width:auto;accent-color:var(--gold)}
+.chips label:has(input:checked){border-color:var(--gold);background:var(--gold-soft)}
+.hp{position:absolute;left:-9999px}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.form-foot p{margin:0;color:var(--muted);font-size:14px;flex:1;min-width:200px}
+.status{grid-column:1/-1;border-radius:10px;padding:14px 16px;font-size:15.5px}
+.status.ok{background:color-mix(in srgb,var(--sage) 16%,transparent);border:1px solid var(--sage)}
+.status.err{background:color-mix(in srgb,#B4533A 12%,transparent);border:1px solid #B4533A}
+.status a{font-weight:500}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+@media (max-width:560px){form{grid-template-columns:1fr;padding:22px}}
+
+footer{border-top:1px solid var(--line);padding-block:40px 96px;color:var(--muted);font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+footer img{width:150px}
+
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:10px;background:#1F8F55;color:#fff;text-decoration:none;border-radius:40px;padding:12px 18px 12px 14px;box-shadow:0 6px 20px rgba(0,0,0,.22);font-size:15px}
+.wa svg{flex:none}
+@media (max-width:480px){.wa span{display:none}.wa{padding:14px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="img/simbolo.png" alt=""><span>ALQUIMIA</span></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#residencia">La residencia</a>
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a class="btn" href="#consultas">Consultar</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <img class="hero-logo" src="img/logo.png" alt="Alquimia Residencia Senior">
+        <span class="stamp"><i></i>Preventa abierta · Inauguración diciembre 2026</span>
+        <h1>Una nueva forma de vivir <em>esta etapa</em></h1>
+        <p>Residencia senior en el centro de Tandil, en un antiguo hotel boutique reconvertido para el cuidado y el bienestar de las personas mayores.</p>
+        <div class="row">
+          <a class="btn" href="#consultas">Reservar una visita</a>
+          <a class="btn line" href="#video">Ver el video</a>
+        </div>
+      </div>
+      <figure class="hero-photo" style="margin:0">
+        <img src="img/frente-alquimia.jpg" alt="Frente de Alquimia Residencia Senior en Fuerte Independencia 57">
+        <figcaption>Fuerte Independencia 57 · Tandil</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact"><b>24 h</b><span>Enfermería todos los días</span></div>
+      <div class="fact"><b>Baño privado</b><span>En cada habitación</span></div>
+      <div class="fact"><b>Centro</b><span>A pocas cuadras de la plaza</span></div>
+      <div class="fact"><b>Diciembre</b><span>Inauguración 2026</span></div>
+    </div>
+  </div>
+
+  <section class="video" id="video">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Conocé Alquimia</span>
+        <h2>Un lugar para conectarse con uno mismo</h2>
+        <p>Un recorrido de un minuto por la residencia y por Tandil.</p>
+      </div>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="img/video-portada.jpg">
+          <source src="video/alquimia.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="residencia">
+    <div class="wrap split">
+      <div>
+        <div class="head">
+          <span class="eyebrow">La residencia</span>
+          <h2>Cuidado profesional con la calidez de <em>un hogar</em></h2>
+          <p>Pocas plazas, espacios amplios y luminosos, y un equipo que conoce a cada residente por su nombre. Acompañamos a cada persona y a su familia desde el primer día.</p>
+        </div>
+        <div class="services">
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><div><h3>Enfermería 24 h</h3><p>Medicación, controles y seguimiento diario de cada residente.</p></div></div>
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><div><h3>Consultorios propios</h3><p>Atención médica y de profesionales dentro de la residencia.</p></div></div>
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 11h14M7 11V8a5 5 0 0 1 10 0v3M6 11l1 9h10l1-9"/></svg><div><h3>Cocina propia</h3><p>Cuatro comidas diarias, con dietas adaptadas a cada necesidad.</p></div></div>
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg><div><h3>Salón de usos múltiples</h3><p>Talleres, actividades recreativas y encuentros con las familias.</p></div></div>
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg><div><h3>Terraza</h3><p>En la última planta, con sol y vista a las sierras.</p></div></div>
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg><div><h3>Edificio accesible</h3><p>Ascensor y circulación pensada para moverse con comodidad.</p></div></div>
+        </div>
+      </div>
+      <div class="photo-stack">
+        <img src="img/comedor.jpg" alt="Comedor con ventanales al patio">
+        <img src="img/living.jpg" alt="Living con sillones">
+        <img src="img/pasillo.jpg" alt="Pasillo con luz natural">
+      </div>
+    </div>
+  </section>
+
+  <section id="habitaciones" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Habitaciones</span>
+        <h2>Espacios pensados <em>para descansar</em></h2>
+        <p>Todas las habitaciones tienen baño privado, calefacción y ventanales con luz natural.</p>
+      </div>
+      <div class="rooms">
+        <article class="room">
+          <img src="img/habitacion-individual.jpg" alt="Habitación individual con ventanal y sillones">
+          <div class="b">
+            <h3>Individual</h3>
+            <p>Para quien prefiere su propio espacio, con toda la privacidad y la compañía cerca.</p>
+            <ul><li>1 residente</li><li>Baño privado</li><li>Vista a la ciudad</li></ul>
+          </div>
+        </article>
+        <article class="room">
+          <img src="img/habitacion-compartida.jpg" alt="Habitación compartida con dos camas">
+          <div class="b">
+            <h3>Compartida</h3>
+            <p>Amplia y luminosa, ideal para matrimonios, hermanos o quienes disfrutan de la compañía.</p>
+            <ul><li>2 residentes</li><li>Baño privado</li><li>Mayor superficie</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Galería</span>
+        <h2>Recorré <em>la casa</em></h2>
+      </div>
+      <div class="gallery">
+        <button class="g-wide g-tall" data-cap="Terraza con pileta en la última planta"><img src="img/terraza-pileta.jpg" alt="Terraza con pileta" loading="lazy"></button>
+        <button data-cap="Rincón de lectura junto al ventanal"><img src="img/ventanal.jpg" alt="Sillones junto al ventanal" loading="lazy"></button>
+        <button data-cap="Desayuno casero"><img src="img/desayuno.jpg" alt="Desayuno servido" loading="lazy"></button>
+        <button class="g-wide" data-cap="Tandil y sus sierras"><img src="img/tandil.jpg" alt="Vista aérea de Tandil" loading="lazy"></button>
+        <button data-cap="Terraza"><img src="img/terraza.jpg" alt="Terraza con plantas y reposeras" loading="lazy"></button>
+        <button class="g-wide" data-cap="Atardecer desde la residencia"><img src="img/atardecer.jpg" alt="Atardecer sobre Tandil" loading="lazy"></button>
+        <button data-cap="Comedor"><img src="img/comedor.jpg" alt="Comedor" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="ubicacion" style="padding-top:0">
+    <div class="wrap place">
+      <div>
+        <div class="head" style="margin-bottom:28px">
+          <span class="eyebrow">Ubicación</span>
+          <h2>En el centro <em>de Tandil</em></h2>
+          <p>A pocos pasos de la plaza principal y cerca del lago del Fuerte, para que las visitas de la familia sean fáciles y frecuentes.</p>
+        </div>
+        <dl>
+          <div><dt>Dirección</dt><dd>Fuerte Independencia 57, Tandil</dd></div>
+          <div><dt>WhatsApp</dt><dd>2494 24-4777</dd></div>
+          <div><dt>Correo</dt><dd>alquimiaresidencia@gmail.com</dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/alquimiaresidenciasenior/" target="_blank" rel="noopener">@alquimiaresidenciasenior</a></dd></div>
+        </dl>
+        <p style="margin-top:22px"><a href="https://www.google.com/maps/search/?api=1&query=Fuerte+Independencia+57+Tandil" target="_blank" rel="noopener">Abrir en Google Maps →</a></p>
+      </div>
+      <div class="map">
+        <iframe title="Mapa de Alquimia Residencia Senior" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Fuerte%20Independencia%2057%2C%20Tandil%2C%20Buenos%20Aires&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="presale">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Preventa abierta</span>
+        <h2>Reservá tu lugar <em>antes de la apertura</em></h2>
+        <p>Las primeras familias acceden a condiciones especiales y eligen habitación primero. Las plazas son limitadas.</p>
+      </div>
+      <ol class="steps">
+        <li><b>Consultá</b><span>Completá el formulario o escribinos por WhatsApp.</span></li>
+        <li><b>Visitá</b><span>Coordinamos un recorrido por la residencia.</span></li>
+        <li><b>Reservá</b><span>Elegí la habitación y confirmá tu lugar.</span></li>
+        <li><b>Ingresá</b><span>Acompañamos el ingreso desde diciembre.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="consultas">
+    <div class="wrap contact">
+      <aside>
+        <div class="head" style="margin-bottom:0">
+          <span class="eyebrow">Consultas</span>
+          <h2>Estamos para <em>conversar</em></h2>
+          <p>Dejanos tus datos y te contactamos para responder tus preguntas y coordinar una visita.</p>
+        </div>
+        <div class="direct"><span>WhatsApp</span><a href="https://wa.me/5492494244777" target="_blank" rel="noopener">2494 24-4777</a></div>
+        <div class="direct"><span>Correo</span><a href="mailto:alquimiaresidencia@gmail.com" style="font-size:18px">alquimiaresidencia@gmail.com</a></div>
+        <div class="direct"><span>Instagram</span><a href="https://www.instagram.com/alquimiaresidenciasenior/" target="_blank" rel="noopener" style="font-size:18px">@alquimiaresidenciasenior</a></div>
+      </aside>
+
+      <form id="form" novalidate>
+        <input type="hidden" name="_subject" value="Nueva consulta desde la web de Alquimia">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="f"><label for="nombre">Tu nombre</label><input id="nombre" name="Nombre" autocomplete="name" required></div>
+        <div class="f"><label for="tel">Teléfono / WhatsApp</label><input id="tel" name="Teléfono" type="tel" inputmode="tel" autocomplete="tel" required></div>
+        <div class="f full"><label for="email">Correo <small>(opcional)</small></label><input id="email" name="Correo" type="email" autocomplete="email"></div>
+
+        <fieldset class="f full">
+          <span class="legend">La consulta es para</span>
+          <div class="chips">
+            <label><input type="radio" name="Para" value="Mí mismo/a" id="p1">Mí mismo/a</label>
+            <label><input type="radio" name="Para" value="Madre o padre" id="p2" checked>Mi madre o padre</label>
+            <label><input type="radio" name="Para" value="Otro familiar" id="p3">Otro familiar</label>
+          </div>
+        </fieldset>
+
+        <div class="f"><label for="hab">Habitación</label>
+          <select id="hab" name="Habitación"><option>Individual</option><option>Compartida</option><option selected>Todavía no sé</option></select></div>
+        <div class="f"><label for="cuando">¿Para cuándo?</label>
+          <select id="cuando" name="Ingreso estimado"><option>Desde la apertura (diciembre)</option><option>En los próximos meses</option><option selected>Estoy averiguando</option></select></div>
+
+        <fieldset class="f full">
+          <span class="legend">Nivel de autonomía</span>
+          <div class="chips">
+            <label><input type="radio" name="Autonomía" value="Autoválido" id="a1">Se maneja solo/a</label>
+            <label><input type="radio" name="Autonomía" value="Necesita algo de ayuda" id="a2">Necesita algo de ayuda</label>
+            <label><input type="radio" name="Autonomía" value="Requiere asistencia permanente" id="a3">Requiere asistencia permanente</label>
+          </div>
+        </fieldset>
+
+        <div class="f full"><label for="msg">Mensaje <small>(opcional)</small></label><textarea id="msg" name="Mensaje" placeholder="Contanos lo que quieras: preguntas, horarios para llamarte, necesidades especiales…"></textarea></div>
+
+        <div id="status" class="status" role="status" hidden></div>
+        <div class="form-foot">
+          <button class="btn" type="submit" id="send">Enviar consulta</button>
+          <p>Te respondemos en el día. Tus datos solo se usan para contactarte.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo.png" alt="Alquimia Residencia Senior">
+    <div>Fuerte Independencia 57 · Tandil, Buenos Aires<br>WhatsApp 2494 24-4777 · alquimiaresidencia@gmail.com<br><a href="https://www.instagram.com/alquimiaresidenciasenior/" target="_blank" rel="noopener">Instagram @alquimiaresidenciasenior</a></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5492494244777?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20preventa%20de%20Alquimia" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+  <span>Escribinos</span>
+</a>
+
+<dialog class="lb" id="lb">
+  <button type="button" aria-label="Cerrar">×</button>
+  <img alt="">
+  <p></p>
+</dialog>
+
+<script>
+// Galería ampliada
+(function(){
+  var lb=document.getElementById('lb'), img=lb.querySelector('img'), cap=lb.querySelector('p');
+  document.querySelectorAll('.gallery button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var i=b.querySelector('img'); img.src=i.src; img.alt=i.alt; cap.textContent=b.dataset.cap||'';
+      if(lb.showModal) lb.showModal();
+    });
+  });
+  lb.querySelector('button').addEventListener('click',function(){lb.close();});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+})();
+
+// Formulario: envía al correo con FormSubmit y ofrece seguir por WhatsApp
+(function(){
+  var DESTINO='alquimiaresidencia@gmail.com', WA='5492494244777';
+  var form=document.getElementById('form'), st=document.getElementById('status'), btn=document.getElementById('send');
+  function show(cls,html){ st.className='status '+cls; st.innerHTML=html; st.hidden=false; }
+  function waLink(d){
+    var t='Hola, soy '+d.get('Nombre')+'. Quiero información sobre la preventa de Alquimia.'+
+      '\nConsulta para: '+(d.get('Para')||'-')+'\nHabitación: '+d.get('Habitación')+'\nIngreso: '+d.get('Ingreso estimado')+
+      (d.get('Autonomía')?'\nAutonomía: '+d.get('Autonomía'):'')+(d.get('Mensaje')?'\n'+d.get('Mensaje'):'');
+    return 'https://wa.me/'+WA+'?text='+encodeURIComponent(t);
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=form.querySelector('#nombre'), t=form.querySelector('#tel');
+    if(!n.value.trim()||t.value.replace(/\D/g,'').length<6){
+      show('err','Completá tu nombre y un teléfono para que podamos contactarte.'); (n.value.trim()?t:n).focus(); return;
+    }
+    var d=new FormData(form);
+    btn.disabled=true; btn.textContent='Enviando…';
+    fetch('https://formsubmit.co/ajax/'+DESTINO,{method:'POST',headers:{'Accept':'application/json'},body:d})
+      .then(function(r){ return r.json().then(function(j){ if(!r.ok||j.success===false||j.success==='false') throw 0; }); })
+      .then(function(){
+        show('ok','¡Gracias, '+d.get('Nombre').split(' ')[0]+'! Recibimos tu consulta y te vamos a contactar a la brevedad. Si preferís, <a href="'+waLink(d)+'" target="_blank" rel="noopener">seguí la conversación por WhatsApp</a>.');
+        form.reset(); btn.textContent='Consulta enviada';
+      })
+      .catch(function(){
+        show('err','No pudimos enviar el formulario. <a href="'+waLink(d)+'" target="_blank" rel="noopener">Mandanos la consulta por WhatsApp</a> con un toque, ya va escrita.');
+        btn.disabled=false; btn.textContent='Enviar consulta';
+      });
+  });
+})();
+</script>
+</body>
+</html>
